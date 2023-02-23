@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please take a moment to fill in this survey.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">Name: <input id="name" type="text" required placeholder="John Smith"></label>
+                <label id="email-label">Email: <input id="email" type="email" required placeholder="john@smith.com"></label>
+                <label id="number-label">Your age: <input id="number" type="number" required min="13" max="100" placeholder="25"></label>
+                <label>Which option best describes your current role? 
+                    <select id="dropdown" type="dropdown">
+                        <option value="">(Select current role)</option>
+                        <option value="1"> Student</option>
+                        <option value="2">Front-End Developer</option>
+                        <option value="3">Back-End Developer</option>
+                        <option value="4">Full-Stack Developer</option>
+                        <option value="5">Other</option>
+                    </select>
+                </label>
+                <label>If "Other" selected, please specify: <input id="other" type="text"></label>
+            </fieldset>
+            <fieldset>
+                <label>Would you recommend this survey to a friend?</label>
+                <label><input type="radio" name="recommendation" class="inline"> Definitely</label>
+                <label><input type="radio" name="recommendation" class="inline"> Maybe</label>
+                <label><input type="radio" name="recommendation" class="inline"> Not sure</label>
+                <label>What would you like to see improved?</label>
+                <label><input type="checkbox" value="1" class="inline"> Front-end Projects</label>
+                <label><input type="checkbox" value="2" class="inline"> Back-end Projects</label>
+                <label><input type="checkbox" value="3" class="inline"> Data Visualisation</label>
+                <label><input type="checkbox" value="4" class="inline"> Challenges</label>
+                <label><input type="checkbox" value="5" class="inline"> Videos</label>
+                <label>Any comments or suggestions?
+                    <textarea id="suggestions" name="suggestions" rows="3" cols="30"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" />  
+        </form>
+    </body>
+</html>
